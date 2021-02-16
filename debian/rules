@@ -1,12 +1,14 @@
 #!/usr/bin/make -f
 
-DESTDIR=debian/code
-PACKAGE=code_1.53.2-1613044664_amd64
+CODE=code_1.53.2-1613044664_amd64
+CODIUM=codium_1.53.2-1613089951_amd64
 
 %:
 	dh $@
 
 override_dh_auto_install:
-	dpkg-deb -xv "amd64/$(PACKAGE).deb" "$(DESTDIR)"
+	dpkg-deb -xv "amd64/$(CODE).deb" debian/code
+	dpkg-deb -xv "amd64/$(CODIUM).deb" debian/codium
+
 override_dh_strip:
 override_dh_shlibdeps:

@@ -10,3 +10,9 @@ Description: Microsoft Visual Studio Code
 Architecture: amd64
 Section: editors
 Depends: ${misc:Depends},
+
+Package: codium
+Description: VSCodium — VS Code without telemetry
+Architecture: amd64
+Section: editors
+Depends: ${misc:Depends},
