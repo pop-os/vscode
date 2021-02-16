@@ -1,0 +1,12 @@
+#!/usr/bin/make -f
+
+DESTDIR=debian/code
+PACKAGE=code_1.53.2-1613044664_amd64
+
+%:
+	dh $@
+
+override_dh_auto_install:
+	dpkg-deb -xv "amd64/$(PACKAGE).deb" "$(DESTDIR)"
+override_dh_strip:
+override_dh_shlibdeps:
