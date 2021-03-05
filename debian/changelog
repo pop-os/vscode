@@ -1,3 +1,9 @@
+code (1.54.1~pop1) bionic; urgency=medium
+
+  * New upstream release
+
+ -- Michael Aaron Murphy <mmstick@pop-os.localdomain>  Fri, 05 Mar 2021 14:19:23 -0700
+
 code (1.53.2~pop1) bionic; urgency=medium
 
   * Repackaging for Pop
