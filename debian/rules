@@ -1,6 +1,6 @@
 #!/usr/bin/make -f
 
-CODE=code_1.54.1-1614898113_amd64
+CODE=code_1.54.2-1615424848_amd64
 CODIUM=codium_1.53.2-1613089951_amd64
 
 %:
